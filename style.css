@@ -6,15 +6,25 @@ body {
     margin: 0;
 }
 
-.crypto-container {
+.watchlist-container {
+    height: 100vh;
     display: flex;
-    flex-direction: column;
-    width: 40%;
-    height: 75vh;
 }
 
-.bitcoin-container, .ethereum-container{
+.crypto-container, .stock-container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100vh;
+}
+
+.stock-container {
+    border: 2px solid black;
+    width: 50%;
+}
+
+.bitcoin-container, .ethereum-container, .dxy-container, .spx-container{
     height: 50%;
     width: 100%;
-    padding: 50px;
+    /* padding: 50px; */
 }

@@ -30,7 +30,8 @@
       
 
       <!-- TradingView Widget BEGIN -->
-      <div class="crypto-container">
+      <div class="watchlist-container">
+        <div class="crypto-container">
           <div class="bitcoin-container">
             <script type="text/javascript">
             new TradingView.widget(
@@ -53,7 +54,6 @@
             );
             </script>
         </div>
-  
           <div class="ethereum-container">
             <script type="text/javascript">
             new TradingView.widget(
@@ -73,7 +73,49 @@
             );
             </script>
           </div>
+        </div>
+        <div class="stock-container">
+          <div class="dxy-container">
+            <script type="text/javascript">
+            new TradingView.widget(
+            {
+            "autosize": true,
+            "symbol": "CAPITALCOM:DXY",
+            "interval": "W",
+            "timezone": "Etc/UTC",
+            "theme": "dark",
+            "style": "1",
+            "locale": "en",
+            "toolbar_bg": "#f1f3f6",
+            "enable_publishing": false,
+            "allow_symbol_change": true,
+            "container_id": "dxy-container"
+          }
+            );
+            </script>
+          </div>
+          <div class="spx-container">
+            <script type="text/javascript">
+            new TradingView.widget(
+            {
+            "autosize": true,
+            "symbol": "FOREXCOM:SPXUSD",
+            "interval": "W",
+            "timezone": "Etc/UTC",
+            "theme": "dark",
+            "style": "1",
+            "locale": "en",
+            "toolbar_bg": "#f1f3f6",
+            "enable_publishing": false,
+            "allow_symbol_change": true,
+            "container_id": "spx-container"
+          }
+            );
+            </script>
+          </div>
+        </div>
       </div>
+      
       
       <!-- TradingView Widget END -->
 

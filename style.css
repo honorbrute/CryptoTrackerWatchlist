@@ -1,3 +1,20 @@
-.tradingview-widget-container {
-    border: 2px solid red;
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.crypto-container {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 75vh;
+}
+
+.bitcoin-container, .ethereum-container{
+    height: 50%;
+    width: 100%;
+    padding: 50px;
 }

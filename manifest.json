@@ -1,0 +1,12 @@
+{
+    "manifest_version": 3,
+    "name": "CryptoStockCharts",
+    "version": "1.0.0",
+    "description": "Chart Watchlist for Crypto and Stock Markets",
+    "action": {
+        "default_icon": "./images/bitcoinExtension.png"
+    },
+    "chrome_url_overrides": {
+        "newtab": "index.html"
+    }
+}

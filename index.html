@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Crypto Stock Chart Watchlist</title>
         <link href="style.css" rel="stylesheet">
-        <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+        
 
         <!-- Bottom is from livecoinwatch -->
         <!-- <script defer src="https://www.livecoinwatch.com/static/lcw-widget.js"></script> -->
@@ -32,86 +32,13 @@
       <!-- TradingView Widget BEGIN -->
       <div class="watchlist-container">
         <div class="crypto-container">
-          <div class="bitcoin-container">
-            <script type="text/javascript">
-            new TradingView.widget(
-            {
-            "autosize": true,
-            "symbol": "COINBASE:BTCUSD",
-            "interval": "W",
-            "timezone": "Etc/UTC",
-            "theme": "dark",
-            "style": "1",
-            "locale": "en",
-            "toolbar_bg": "#f1f3f6",
-            "enable_publishing": false,
-            "allow_symbol_change": true,
-            "studies": [
-              "MASimple@tv-basicstudies"
-            ],
-            "container_id": "bitcoin-container"
-          }
-            );
-            </script>
-        </div>
-          <div class="ethereum-container">
-            <script type="text/javascript">
-            new TradingView.widget(
-            {
-            "autosize": true,
-            "symbol": "COINBASE:ETHUSD",
-            "interval": "W",
-            "timezone": "Etc/UTC",
-            "theme": "dark",
-            "style": "1",
-            "locale": "en",
-            "toolbar_bg": "#f1f3f6",
-            "enable_publishing": false,
-            "allow_symbol_change": true,
-            "container_id": "ethereum-container"
-          }
-            );
-            </script>
-          </div>
+          <div class="bitcoin-container" id="bitcoin-container"></div>
+          <div class="ethereum-container" id="ethereum-container"></div>
         </div>
         <div class="stock-container">
-          <div class="dxy-container">
-            <script type="text/javascript">
-            new TradingView.widget(
-            {
-            "autosize": true,
-            "symbol": "CAPITALCOM:DXY",
-            "interval": "W",
-            "timezone": "Etc/UTC",
-            "theme": "dark",
-            "style": "1",
-            "locale": "en",
-            "toolbar_bg": "#f1f3f6",
-            "enable_publishing": false,
-            "allow_symbol_change": true,
-            "container_id": "dxy-container"
-          }
-            );
-            </script>
-          </div>
-          <div class="spx-container">
-            <script type="text/javascript">
-            new TradingView.widget(
-            {
-            "autosize": true,
-            "symbol": "FOREXCOM:SPXUSD",
-            "interval": "W",
-            "timezone": "Etc/UTC",
-            "theme": "dark",
-            "style": "1",
-            "locale": "en",
-            "toolbar_bg": "#f1f3f6",
-            "enable_publishing": false,
-            "allow_symbol_change": true,
-            "container_id": "spx-container"
-          }
-            );
-            </script>
+          <div class="dxy-container" id="dxy-container"></div>
+          <div class="spx-container" id="spx-container">
+            
           </div>
         </div>
       </div>
@@ -121,5 +48,6 @@
 
         
     </body>
+    <script src="./tv.js"></script>
     <script src="index.js"></script>
 </html>
